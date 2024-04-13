@@ -1,0 +1,91 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; 
+}
+
+.btn-modal {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 36px;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-modal:hover {
+    background-color: #ddd; 
+}
+
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 32px;
+    border-radius: 14px;
+    max-width: 900px;
+    min-width: 600px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.AddBtn{
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    padding: 5px 7px;
+}
+
+.Addtxt{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.planeImg {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px; 
+  }
+
+.rentImg {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+}
+.appleImg {
+    width: 40px; 
+    height: 30px;
+    margin-right: 10px; 
+  }

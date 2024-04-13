@@ -1,0 +1,95 @@
+body{
+  height: 100vh;
+  /*background: linear-gradient(
+      to right,
+      #ffffff 0%,
+      #ffffff 13.4%,
+      #FFFDD0 13.4%,
+      #FFFDD0 86.4%,
+      #ffffff 86.4%,
+      #ffffff 100%
+      )*/
+}
+
+.container1 {
+  position: absolute;
+  top: 10vh;
+  left: 350px;
+  border: 3px solid black;
+  height: 80vh;
+  width: 72vw;
+}
+
+.container2 {
+  position: absolute;
+  top: 10vh;
+  right: 10px;
+  border: 3px solid black;
+  height: 80vh;
+  width: 13vw;
+  font-size: 18px;
+  text-align: center;
+}
+
+.container3 {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  border: 3px solid black;
+  height: 80vh;
+  width: 13vw;
+  font-size: 18px;
+}
+
+.container3 h3 {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container3 ul {
+  list-style-type: none;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.container3 ul li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.container3 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.dashboardImg{
+  width: 40px; 
+  height: 30px;
+  margin-right: 10px; 
+}
+.monthImg{
+  width: 40px; 
+  height: 30px;
+  margin-right: 10px; 
+}
+.statisticsImg{
+  width: 40px; 
+  height: 30px;
+  margin-right: 10px; 
+}
+.stocksImg {
+  width: 40px; 
+  height: 30px;
+  margin-right: 10px; 
+}
+
+
+
+
+
+
