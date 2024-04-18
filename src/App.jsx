@@ -6,16 +6,16 @@ import logo2 from './images/statistics.png';
 import logo3 from './images/stocks.png';
 import { Link } from "react-router-dom";
 
+import Header from './Components/Header';
+
 function App() {
   return (
     <>
-      <h1>Pence Pal</h1>
-      <div className="container1">
-        <Modal />
+      <Header/>
+      <div className="main-container">
+        <Modal/>
       </div>
-      <div className="container2">
-        <h3>Expense History</h3>
-      </div>
+      
       <div className="container3">
         
         <h3>This Month <br /> £932.12 <br />Remaining</h3>
