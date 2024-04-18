@@ -1,0 +1,76 @@
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: #0f0f23;
+    height: 40px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    overflow: hidden;
+  }
+
+.nav-container {
+    height: inherit;
+}
+
+
+.nav-left {
+    display: inline-flex;
+    height: inherit;
+    float: left;
+}
+.nav-left .nav-logo {
+    display: inline-flex;
+    height: inherit;
+    width:auto;
+    border-radius: 50%;
+    align-items: center;
+}
+.nav-left .brand-text {
+    display: inline-flex;
+    height: inherit;
+    width: auto;
+    font-size: 20px;
+    align-items: center;
+    margin-block: 0;
+    margin-left: 5px;
+}
+.nav-left .menu-bars {
+    display: flex;
+    height: inherit;
+    width: auto;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    transition: 0.25s;
+}
+.menu-bars :hover {
+    color: rgba(255, 255, 255, 0.367);
+}
+
+
+.nav-right {
+    display: inline-flex;
+    height: inherit;
+    float: right;
+}
+.nav-list {
+    display: inline-flex;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+.nav-list :hover {
+    background-color: rgba(255, 140, 0, 0.916);
+}
+.nav-list .nav-link {
+    display: flex;
+    width: auto;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding-inline: 16px;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+

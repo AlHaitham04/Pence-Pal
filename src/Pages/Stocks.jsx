@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../css/Stocks.css"
+import "../css/Stocks.css";
+import Navbar from '../Components/Navbar';
 
 
 function Stocks(){
 return (
     <div>
-      <Link to ="/" className="home">Home Page</Link>
+      <Navbar/>
     </div>
   );
 };

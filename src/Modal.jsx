@@ -4,6 +4,7 @@ import logo from "./images/plane.png"
 import logo1 from "./images/apple.png"
 import logo2 from "./images/rent.png"
 
+import * as FaIcons from "react-icons/fa";
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
@@ -22,15 +23,15 @@ export default function Modal() {
     <>
       <div class="btn-modal-container" >
         <button onClick={toggleModal} className="btn-modal">
-        <img src={logo} alt="Plane" className="planeImg" />
+        <FaIcons.FaBus alt="Bus" className="icon" />
           Travel
         </button>
         <button onClick={toggleModal} className="btn-modal">
-        <img src={logo1} alt="Apple" className="appleImg" />
+        <FaIcons.FaShoppingBasket alt="ShoppingBasket" className="icon" />
           Groceries
         </button>
         <button onClick={toggleModal} className="btn-modal">
-        <img src={logo2} alt="Rent" className="rentImg" />
+        <FaIcons.FaHouseUser alt="Rent" className="icon" />
           Rent
         </button>
         <button onClick={toggleModal} className="btn-modal">
@@ -44,12 +45,12 @@ export default function Modal() {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <form>
-                <label>Money Spent </label>
-                <input type="Add" className="Addtxt"/>
+            <form className="modal-form">
+                <label className="AddLabel">Money Spent: </label>
+                <input type="Add" className="AddTxt"/>
                 <button className = "AddBtn"> Add </button>
             </form>
-            <button className="close-modal" onClick={toggleModal}> CLOSE </button>
+            <button className="close-modal" onClick={toggleModal}>X</button>
           </div>
         </div>
       )}
