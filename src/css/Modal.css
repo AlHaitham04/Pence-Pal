@@ -2,17 +2,43 @@ body.active-modal {
     overflow-y: hidden;
 }
 
+.main-container {
+    display: inline-flex;
+    margin-left: 10%;
+    margin-block: 40px;
+    min-height: 250px;
+    min-width: 600px;
+    height: 80vh;
+    width: 80vw;
+    background-color: #3e3f5f;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.measurer {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .btn-modal-container {
-    height: 25%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
     display: grid;
-    grid-template-columns: 49% 49%;
-    grid-column-gap: 2%;
-    grid-row-gap: 8%;
+    grid-template-columns: 20% 20%;
+    grid-column-gap: 60%;
+    grid-row-gap: 60%;
+    align-items: center;
+    justify-content: center;
 }
 .btn-modal {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     border: none;
     border-radius: 20px;
     display: inline-flex;
@@ -24,10 +50,10 @@ body.active-modal {
     color: white;
     background-color: #191e4f;
     opacity: 1;
+    transition: opacity 0.25s ease;
 }
 .btn-modal:hover {
     opacity: 0.6;
-    transition: 0.25s ease;
 }
 .icon {
     width: 25%; 
@@ -53,7 +79,7 @@ body.active-modal {
 .modal-content {
     position: absolute;
     display: flex;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
@@ -62,6 +88,7 @@ body.active-modal {
     border-radius: 14px;
     max-width: 900px;
     min-width: 600px;
+    height: 150px;
     justify-content: center;
 }
 

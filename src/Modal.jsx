@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "./css/Modal.css";
-import logo from "./images/plane.png"
-import logo1 from "./images/apple.png"
-import logo2 from "./images/rent.png"
 
 import * as FaIcons from "react-icons/fa";
 
@@ -20,15 +17,18 @@ export default function Modal() {
   }
 
   return (
-    <>
-      <div class="btn-modal-container" >
+    <div className="main-container">
+
+      <FaIcons.FaRegCircle className="measurer"></FaIcons.FaRegCircle>
+
+      <div className="btn-modal-container" >
         <button onClick={toggleModal} className="btn-modal">
         <FaIcons.FaBus alt="Bus" className="icon" />
           Travel
         </button>
         <button onClick={toggleModal} className="btn-modal">
         <FaIcons.FaShoppingBasket alt="ShoppingBasket" className="icon" />
-          Groceries
+          Shopping
         </button>
         <button onClick={toggleModal} className="btn-modal">
         <FaIcons.FaHouseUser alt="Rent" className="icon" />
@@ -54,6 +54,6 @@ export default function Modal() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
