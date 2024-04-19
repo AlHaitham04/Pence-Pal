@@ -1,0 +1,40 @@
+.history {
+    z-index: 1;
+    right: -100%;
+    position: fixed;
+    top: 1;
+    display: inline-block;
+    border: none;
+    background-color: #131330;
+    height: 100vh;
+    width: 20vw;
+    font-size: 18px;
+    transition: right 0.2s;
+  }
+.history.active {
+    right: 0;
+    transition: right 0.1s;
+}
+
+.history h3 {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+.history ul :hover {
+    background-color: #6868b7;
+    transition: background-color 0.2s;
+}
+.history ul li {
+    padding: 10px;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}

@@ -1,4 +1,6 @@
 .nav-bar {
+    z-index: 1;
+    display: block;
     position: sticky;
     top: 0;
     background-color: #0f0f23;
@@ -34,16 +36,16 @@
     margin-block: 0;
     margin-left: 5px;
 }
-.nav-left .menu-bars {
+.nav-left .nav-menu {
     display: flex;
     height: inherit;
     width: auto;
     align-items: center;
     color: white;
-    margin-right: 10px;
-    transition: 0.25s;
+    margin-right: 20px;
+    transition: color 0.25s;
 }
-.menu-bars :hover {
+.nav-menu :hover {
     color: rgba(255, 255, 255, 0.367);
 }
 
@@ -53,6 +55,7 @@
     height: inherit;
     float: right;
 }
+
 .nav-list {
     display: inline-flex;
     height: inherit;
@@ -70,7 +73,20 @@
     text-decoration: none;
     padding-inline: 16px;
     border-radius: 25px;
-    transition: 0.25s;
+    transition: background-color 0.25s;
+}
+
+.nav-right .nav-history {
+    display: flex;
+    height: inherit;
+    width: auto;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.25s;
+}
+.nav-history :hover {
+    color: rgba(255, 255, 255, 0.367);
 }
 
 
